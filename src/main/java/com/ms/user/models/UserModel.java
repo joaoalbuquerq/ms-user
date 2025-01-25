@@ -17,7 +17,7 @@ public class UserModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID userId;
 
-    private String name;
+    private String nome;
     private String email;
 
     public UUID getUserId() {
@@ -28,12 +28,12 @@ public class UserModel implements Serializable {
         this.userId = userId;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String name) {
+        this.nome = name;
     }
 
     public String getEmail() {
